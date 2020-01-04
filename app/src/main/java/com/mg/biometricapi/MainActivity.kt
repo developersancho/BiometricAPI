@@ -47,12 +47,12 @@ class MainActivity : AppCompatActivity() {
                 }
                 BiometricManager.BIOMETRIC_ERROR_NO_HARDWARE -> {
                     Log.e("MY_APP_TAG", "No biometric features available on this device.")
-                    showLongToast("BIOMETRIC_ERROR_NO_HARDWARE")
+                    showLongToast("No biometric features available on this device")
                 }
 
                 BiometricManager.BIOMETRIC_ERROR_HW_UNAVAILABLE -> {
                     Log.e("MY_APP_TAG", "Biometric features are currently unavailable.")
-                    showLongToast("BIOMETRIC_ERROR_HW_UNAVAILABLE")
+                    showLongToast("Biometric features are currently unavailable")
                 }
 
                 BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> {
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                         "MY_APP_TAG",
                         "The user hasn't associated any biometric credentials with their account."
                     )
-                    showLongToast("BIOMETRIC_ERROR_NONE_ENROLLED")
+                    showLongToast("The user hasn't associated any biometric credentials with their account")
                 }
                 else -> loginWithPassword()
             }
