@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BiometricAPI</string>
+    <string name="prompt_info_title">prompt info title</string>
+    <string name="prompt_info_subtitle">prompt info subtitle</string>
+    <string name="prompt_info_description">prompt info description</string>
+    <string name="prompt_info_use_app_password">prompt info use app password</string>
+</resources>
